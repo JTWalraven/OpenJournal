@@ -1,0 +1,1 @@
+apply from: 'http://dl.bintray.com:80/shemnon/javafx-gradle/8.1.1/javafx.plugin'
