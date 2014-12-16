@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane
-    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
 
-</GridPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="main-menu" prefHeight="400.0" prefWidth="99.0" styleClass="sidebar-menu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" text="Write" />
+            <Button mnemonicParsing="false" text="History" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="99.0" prefHeight="400.0" prefWidth="503.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox id="editor-menu" prefHeight="55.0" prefWidth="501.0" styleClass="header-menu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button mnemonicParsing="false" text="B" />
+                  <Button mnemonicParsing="false" text="I" />
+                  <Button mnemonicParsing="false" text="U" />
+                  <Button mnemonicParsing="false" text="h1" />
+                  <Button mnemonicParsing="false" text="h2" />
+                  <Button mnemonicParsing="false" text="h3" />
+                  <Label text="Insert:" />
+                  <Button mnemonicParsing="false" text="link" />
+                  <Button mnemonicParsing="false" text="img" />
+                  <Button mnemonicParsing="false" text="uo-list" />
+                  <Button mnemonicParsing="false" text="o-list" />
+                  <Button mnemonicParsing="false" text="quote" />
+               </children>
+            </HBox>
+            <AnchorPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutY="20.0" prefHeight="16.0" prefWidth="339.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="162.0" />
+                  <Button layoutX="429.0" layoutY="15.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="79.0" />
+                  <Button layoutX="429.0" layoutY="15.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
