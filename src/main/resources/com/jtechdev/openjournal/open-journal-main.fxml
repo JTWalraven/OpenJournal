@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox id="main-menu" prefHeight="400.0" prefWidth="99.0" styleClass="sidebar-menu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -34,13 +33,36 @@
                   <Button mnemonicParsing="false" text="quote" />
                </children>
             </HBox>
-            <AnchorPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <GridPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="373.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="242.0" minWidth="10.0" prefWidth="75.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="242.0" minWidth="10.0" prefWidth="56.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
-                  <Label layoutY="20.0" prefHeight="16.0" prefWidth="339.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="162.0" />
-                  <Button layoutX="429.0" layoutY="15.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="79.0" />
-                  <Button layoutX="429.0" layoutY="15.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                  <Label prefHeight="16.0" prefWidth="388.0" text="Time Day, Month Date, Year" />
+                  <Button mnemonicParsing="false" text="Preview" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" text="Done" GridPane.columnIndex="2" />
                </children>
-            </AnchorPane>
+            </GridPane>
+            <TextArea layoutY="55.0" prefHeight="285.0" prefWidth="501.0" wrapText="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane disable="true" layoutX="99.0" prefHeight="400.0" prefWidth="501.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="55.0" prefWidth="501.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <right>
+                  <TextField prefHeight="26.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </TextField>
+               </right>
+            </BorderPane>
+            <ListView layoutY="55.0" prefHeight="339.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
          </children>
       </AnchorPane>
    </children>
