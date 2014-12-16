@@ -9,31 +9,76 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox id="main-menu" prefHeight="400.0" prefWidth="99.0" styleClass="sidebar-menu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox id="main-menu" prefHeight="400.0" prefWidth="100.0" styleClass="sidebar-menu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button mnemonicParsing="false" text="Write" />
-            <Button mnemonicParsing="false" text="History" />
+            <Button mnemonicParsing="false" styleClass="selected" text="" />
+            <Button mnemonicParsing="false" text="" />
          </children>
       </VBox>
-      <AnchorPane layoutX="99.0" prefHeight="400.0" prefWidth="503.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="99.0" prefHeight="400.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox id="editor-menu" prefHeight="55.0" prefWidth="501.0" styleClass="header-menu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <HBox id="editor-menu" prefHeight="55.0" prefWidth="501.0" styleClass="toolbar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Button mnemonicParsing="false" text="B" />
-                  <Button mnemonicParsing="false" text="I" />
-                  <Button mnemonicParsing="false" text="U" />
-                  <Button mnemonicParsing="false" text="h1" />
-                  <Button mnemonicParsing="false" text="h2" />
-                  <Button mnemonicParsing="false" text="h3" />
-                  <Label text="Insert:" />
-                  <Button mnemonicParsing="false" text="link" />
-                  <Button mnemonicParsing="false" text="img" />
-                  <Button mnemonicParsing="false" text="uo-list" />
-                  <Button mnemonicParsing="false" text="o-list" />
-                  <Button mnemonicParsing="false" text="quote" />
+                  <Button mnemonicParsing="false" text="B">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="I">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman Italic" size="15.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="U" underline="true">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="15.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="h1">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" text="h2">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" text="h3">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Label text="Insert:">
+                     <HBox.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </HBox.margin></Label>
+                  <Button ellipsisString="" mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button ellipsisString="" mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
                </children>
             </HBox>
-            <GridPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <GridPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" styleClass="actions-toolbar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="373.0" />
                 <ColumnConstraints hgrow="NEVER" maxWidth="242.0" minWidth="10.0" prefWidth="75.0" />
@@ -43,7 +88,10 @@
                 <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label prefHeight="16.0" prefWidth="388.0" text="Time Day, Month Date, Year" />
+                  <Label prefHeight="16.0" prefWidth="388.0" text="Time Day, Month Date, Year">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin></Label>
                   <Button mnemonicParsing="false" text="Preview" GridPane.columnIndex="1" />
                   <Button mnemonicParsing="false" text="Done" GridPane.columnIndex="2" />
                </children>

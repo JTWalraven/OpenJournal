@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('OpenSans-Regular.ttf');
+} 
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fontawesome-webfont.ttf');
+} 
+
+Label {
+    -fx-font-family: 'OpenSans';
+}
+
+.fnt-awe-btn {
+    -fx-font-family: 'FontAwesome';
+    -fx-font-size: 13px;
+}
+
+.sidebar-menu {
+    -fx-background-color: #333333;
+}
+
+.sidebar-menu Button {
+    -fx-background-radius: 0px;
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-background-color: #333333;
+    -fx-font-size: 45px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'FontAwesome';
+}
+
+.sidebar-menu Button.selected {
+    -fx-background-color: #666666;
+}

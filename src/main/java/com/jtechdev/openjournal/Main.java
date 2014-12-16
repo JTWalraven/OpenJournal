@@ -13,6 +13,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("open-journal-main.fxml"));
 
         Scene scene = new Scene(root, 900, 600);
+        scene.getStylesheets().add(getClass().getResource("open-journal-main.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("write-panel.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("toolbar.css").toExternalForm());
 
         stage.setTitle("OpenJournal");
         stage.setScene(scene);

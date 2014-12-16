@@ -1,0 +1,22 @@
+.toolbar {
+    -fx-background-color: #333333;
+}
+
+.toolbar Label {
+    -fx-text-fill: #ffffff;
+}
+
+.toolbar Button {
+    -fx-min-width: 35px;
+    -fx-max-width: 35px;
+    -fx-min-height: 35px;
+    -fx-max-height: 35px;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #333333;
+    -fx-border-color: #646464;
+}
+
+.toolbar Button:hover {
+    -fx-background-color: #646464;
+}
