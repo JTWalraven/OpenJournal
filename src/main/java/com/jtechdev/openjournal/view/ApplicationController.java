@@ -92,4 +92,25 @@ public class ApplicationController {
         String imageEnd = "]()";
         editorController.addTextDecoration(imageBegin, imageEnd, editorTextArea);
     }
+
+    @FXML 
+    private void insertBulletList() {
+        String listBegin = "\n- ";
+        String listEnd = "\n- ";
+        editorController.addTextDecoration(listBegin, listEnd, editorTextArea);
+    }
+
+    @FXML 
+    private void insertNumberedList() {
+        String listBegin = "\n1. ";
+        String listEnd = "\n2. ";
+        editorController.addTextDecoration(listBegin, listEnd, editorTextArea);
+    }
+
+    @FXML
+    private void insertBlockQuote() {
+        String blockBegin = "\n> ";
+        String blockEnd = "\n> ";
+        editorController.addTextDecoration(blockBegin, blockEnd, editorTextArea);
+    }
 }
