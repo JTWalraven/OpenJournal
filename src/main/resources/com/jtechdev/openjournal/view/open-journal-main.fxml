@@ -56,11 +56,11 @@
                      <HBox.margin>
                         <Insets left="5.0" top="20.0" />
                      </HBox.margin></Label>
-                  <Button ellipsisString="" mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                  <Button ellipsisString="" mnemonicParsing="false" onAction="#insertLink" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin></Button>
-                  <Button ellipsisString="" mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+                  <Button ellipsisString="" mnemonicParsing="false" onAction="#insertImage" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin></Button>

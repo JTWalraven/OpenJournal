@@ -18,11 +18,15 @@ public class ApplicationController {
     // Refrence to the main application
     private Main mainApp;
 
+    // Seperate controllers that are called
+    private EditorController editorController;
+
     /**
      * The contructor.
      * Called before the initialize() method.
      */
     public ApplicationController() {
+        editorController = new EditorController();
     }
 
     @FXML
@@ -41,56 +45,51 @@ public class ApplicationController {
     @FXML
     private void setBoldText() {
         String boldMark = "**";
-        this.addTextDecoration(boldMark, boldMark);
+        editorController.addTextDecoration(boldMark, boldMark, editorTextArea);
     }
 
     @FXML
     private void setItalicText() {
         String italicMark = "*";
-        this.addTextDecoration(italicMark, italicMark);
+        editorController.addTextDecoration(italicMark, italicMark, editorTextArea);
     }
 
     @FXML
     private void setUnderlineText() {
         String underlineBegin = "<ul>";
         String underlineEnd = "</ul>";
-        this.addTextDecoration(underlineBegin, underlineEnd);
+        editorController.addTextDecoration(underlineBegin, underlineEnd, editorTextArea);
     }
 
     @FXML
     private void setH1Text() {
         String h1Mark = "#";
-        this.addTextDecoration(h1Mark, "");
+        editorController.addTextDecoration(h1Mark, "", editorTextArea);
     }
 
     @FXML
     private void setH2Text() {
         String h2Mark = "##";
-        this.addTextDecoration(h2Mark, "");
+        editorController.addTextDecoration(h2Mark, "", editorTextArea);
     }
 
     @FXML
     private void setH3Text() {
         String h3Mark = "###";
-        this.addTextDecoration(h3Mark, "");
+        editorController.addTextDecoration(h3Mark, "", editorTextArea);
     }
 
-    private void addTextDecoration(String markBegin, String markEnd) {
-        IndexRange selection = editorTextArea.getSelection();
-        if (selection.getLength() > 0) {
-            // Add bold marks to the beginning and end of the selection
-            editorTextArea.insertText(selection.getEnd(), markEnd);
-            editorTextArea.insertText(selection.getStart(), markBegin);
-        } else {
-            // Append the bold marks at the caret position and set the cursor in between
-            int caretPos = editorTextArea.getCaretPosition();
-            int endPos = caretPos + markBegin.length();
-            editorTextArea.insertText(caretPos, markBegin);
-            editorTextArea.insertText(endPos, markEnd);
-            editorTextArea.positionCaret(endPos);
-        }
+    @FXML
+    private void insertLink() {
+        String linkBegin = "[";
+        String linkEnd = "]()";
+        editorController.addTextDecoration(linkBegin, linkEnd, editorTextArea);
+    }
 
-        // Set focus on the text area so editing can continue as normal
-        editorTextArea.requestFocus();
+    @FXML
+    private void insertImage() {
+        String imageBegin = "![";
+        String imageEnd = "]()";
+        editorController.addTextDecoration(imageBegin, imageEnd, editorTextArea);
     }
 }
