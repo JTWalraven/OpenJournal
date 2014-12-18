@@ -26,29 +26,29 @@
                      <font>
                         <Font name="Times New Roman Bold" size="15.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" text="I">
+                  <Button mnemonicParsing="false" onAction="#setItalicText" text="I">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Times New Roman Italic" size="15.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" text="U" underline="true">
+                  <Button mnemonicParsing="false" onAction="#setUnderlineText" text="U" underline="true">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin>
                      <font>
                         <Font name="Times New Roman" size="15.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" text="h1">
+                  <Button mnemonicParsing="false" onAction="#setH1Text" text="h1">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin></Button>
-                  <Button mnemonicParsing="false" text="h2">
+                  <Button mnemonicParsing="false" onAction="#setH2Text" text="h2">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin></Button>
-                  <Button mnemonicParsing="false" text="h3">
+                  <Button mnemonicParsing="false" onAction="#setH3Text" text="h3">
                      <HBox.margin>
                         <Insets left="5.0" top="10.0" />
                      </HBox.margin></Button>
