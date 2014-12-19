@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane layoutX="99.0" prefHeight="400.0" prefWidth="501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jtechdev.openjournal.view.EditorController">
+ <children>
+    <HBox id="editor-menu" prefHeight="55.0" prefWidth="501.0" styleClass="toolbar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <children>
+          <Button mnemonicParsing="false" onAction="#setBoldText" text="B">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin>
+             <font>
+                <Font name="Times New Roman Bold" size="15.0" />
+             </font></Button>
+          <Button mnemonicParsing="false" onAction="#setItalicText" text="I">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin>
+             <font>
+                <Font name="Times New Roman Italic" size="15.0" />
+             </font></Button>
+          <Button mnemonicParsing="false" onAction="#setUnderlineText" text="U" underline="true">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin>
+             <font>
+                <Font name="Times New Roman" size="15.0" />
+             </font></Button>
+          <Button mnemonicParsing="false" onAction="#setH1Text" text="h1">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button mnemonicParsing="false" onAction="#setH2Text" text="h2">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button mnemonicParsing="false" onAction="#setH3Text" text="h3">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Label text="Insert:">
+             <HBox.margin>
+                <Insets left="5.0" top="20.0" />
+             </HBox.margin></Label>
+          <Button ellipsisString="" mnemonicParsing="false" onAction="#insertLink" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button ellipsisString="" mnemonicParsing="false" onAction="#insertImage" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+          <Button mnemonicParsing="false" styleClass="fnt-awe-btn" text="" textOverrun="CLIP">
+             <HBox.margin>
+                <Insets left="5.0" top="10.0" />
+             </HBox.margin></Button>
+       </children>
+    </HBox>
+    <GridPane layoutY="345.0" prefHeight="55.0" prefWidth="501.0" styleClass="actions-toolbar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="373.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="242.0" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="NEVER" maxWidth="242.0" minWidth="10.0" prefWidth="56.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+       <children>
+          <Label prefHeight="16.0" prefWidth="388.0" text="Time Day, Month Date, Year">
+             <GridPane.margin>
+                <Insets left="5.0" />
+             </GridPane.margin></Label>
+          <Button mnemonicParsing="false" text="Preview" GridPane.columnIndex="1" />
+          <Button mnemonicParsing="false" text="Done" GridPane.columnIndex="2" />
+       </children>
+    </GridPane>
+    <TextArea fx:id="editorTextArea" layoutY="55.0" prefHeight="285.0" prefWidth="501.0" promptText="Start typing here..." wrapText="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+ </children>
+</AnchorPane>

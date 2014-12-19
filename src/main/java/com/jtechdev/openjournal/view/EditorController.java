@@ -12,10 +12,90 @@ import com.jtechdev.openjournal.Main;
 */
 public class EditorController {
 
+    @FXML
+    private TextArea editorTextArea;
+
     /**
      * The EditorController contructor.
+     * Called before the initialize() method.
      */
     public EditorController() {}
+
+    @FXML
+    private void initialize() {
+    }
+
+    @FXML
+    private void setBoldText() {
+        String boldMark = "**";
+        this.addTextDecoration(boldMark, boldMark, editorTextArea);
+    }
+
+    @FXML
+    private void setItalicText() {
+        String italicMark = "*";
+        this.addTextDecoration(italicMark, italicMark, editorTextArea);
+    }
+
+    @FXML
+    private void setUnderlineText() {
+        String underlineBegin = "<ul>";
+        String underlineEnd = "</ul>";
+        this.addTextDecoration(underlineBegin, underlineEnd, editorTextArea);
+    }
+
+    @FXML
+    private void setH1Text() {
+        String h1Mark = "#";
+        this.addTextDecoration(h1Mark, "", editorTextArea);
+    }
+
+    @FXML
+    private void setH2Text() {
+        String h2Mark = "##";
+        this.addTextDecoration(h2Mark, "", editorTextArea);
+    }
+
+    @FXML
+    private void setH3Text() {
+        String h3Mark = "###";
+        this.addTextDecoration(h3Mark, "", editorTextArea);
+    }
+
+    @FXML
+    private void insertLink() {
+        String linkBegin = "[";
+        String linkEnd = "]()";
+        this.addTextDecoration(linkBegin, linkEnd, editorTextArea);
+    }
+
+    @FXML
+    private void insertImage() {
+        String imageBegin = "![";
+        String imageEnd = "]()";
+        this.addTextDecoration(imageBegin, imageEnd, editorTextArea);
+    }
+
+    @FXML 
+    private void insertBulletList() {
+        String listBegin = "\n- ";
+        String listEnd = "\n- ";
+        this.addTextDecoration(listBegin, listEnd, editorTextArea);
+    }
+
+    @FXML 
+    private void insertNumberedList() {
+        String listBegin = "\n1. ";
+        String listEnd = "\n2. ";
+        this.addTextDecoration(listBegin, listEnd, editorTextArea);
+    }
+
+    @FXML
+    private void insertBlockQuote() {
+        String blockBegin = "\n> ";
+        String blockEnd = "\n> ";
+        this.addTextDecoration(blockBegin, blockEnd, editorTextArea);
+    }
 
     /**
      * Adds a text decoration to the text in the editor.
