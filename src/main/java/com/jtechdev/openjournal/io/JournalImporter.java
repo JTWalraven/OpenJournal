@@ -39,20 +39,33 @@ public class JournalImporter {
         for (Object obj : yaml.loadAll(input)) {
             Map map = (Map) obj;
             if (map.containsKey("Journal")) { // Check if it is a journal
+                // Import journal title
                 jrnl.setTitle((String) map.get("Journal"));
+
+                // Get creation date
                 Calendar creationDate = Calendar.getInstance();
                 creationDate.setTime((Date) map.get("Creation Date"));
                 jrnl.setCreationDate(creationDate);
+
+                // Get modification date
                 Calendar modDate = Calendar.getInstance();
                 modDate.setTime((Date) map.get("Modification Date"));
                 jrnl.setModificationDate(modDate);
             } else { // or a journal entry
                 JournalEntry jrnlEntry = new JournalEntry();
+
+                // Get the creation date of the journal entry
                 Calendar date = Calendar.getInstance();
                 date.setTime((Date) map.get("Date"));
                 jrnlEntry.setDate(date);
+
+                // Get the body text of the journal entry
                 jrnlEntry.setBody((String) map.get("Body"));
+
+                // Get the tags of the journal entry
                 jrnlEntry.setTags((ArrayList<Tag>) map.get("Tags"));
+
+                // Add the journal entry
                 jrnl.add(jrnlEntry);
             }
         }

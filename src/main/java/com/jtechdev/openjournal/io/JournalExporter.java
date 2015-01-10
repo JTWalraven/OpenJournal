@@ -18,11 +18,14 @@ import java.util.HashMap;
 */
 public class JournalExporter {
 
-    public JournalExporter() {
-
-    }
-
-    public void exportJournal(Journal journal) {
+    /**
+     * Export a Journal object to a YAML file.
+     * Gets the file to export to from the Journal object.
+     *
+     * @param jrnl The Journal object to export
+     */
+    public void exportJournal(Journal jrnl) {
+        this.exportJournal(jrnl, jrnl.getFile());
     }
 
     /**
