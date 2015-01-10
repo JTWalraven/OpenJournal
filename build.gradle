@@ -1,1 +1,10 @@
 apply from: 'http://dl.bintray.com:80/shemnon/javafx-gradle/8.1.1/javafx.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.yaml:snakeyaml:1.14" 
+    testCompile "junit:junit:4.11"
+}
