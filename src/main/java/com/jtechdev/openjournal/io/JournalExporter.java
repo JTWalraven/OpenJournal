@@ -24,7 +24,7 @@ public class JournalExporter {
      *
      * @param jrnl The Journal object to export
      */
-    public void exportJournal(Journal jrnl) {
+    public void exportJournal(Journal jrnl) throws IOException {
         this.exportJournal(jrnl, jrnl.getFile());
     }
 
