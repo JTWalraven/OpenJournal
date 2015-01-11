@@ -1,9 +1,10 @@
-package com.jtechdev.openjournal.view;
+package com.jtechdev.openjournal.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.IndexRange;
 import com.jtechdev.openjournal.Main;
+import com.jtechdev.openjournal.model.*;
 
 /**
 * The editor controller.
@@ -11,6 +12,8 @@ import com.jtechdev.openjournal.Main;
 * @author Jeffrey Walraven
 */
 public class EditorController {
+
+    private Journal journal;
 
     @FXML
     private TextArea editorTextArea;

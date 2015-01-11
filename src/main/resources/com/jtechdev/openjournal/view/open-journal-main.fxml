@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jtechdev.openjournal.view.ApplicationController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jtechdev.openjournal.controller.ApplicationController">
    <children>
       <VBox id="main-menu" prefHeight="400.0" prefWidth="100.0" styleClass="sidebar-menu" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -15,7 +15,7 @@
             <Button mnemonicParsing="false" text="" />
          </children>
      </VBox>
-     <fx:include fx:id="editor" source="editor-panel.fxml"/>
-     <fx:include fx:id="history" source="history-panel.fxml"/>
+     <fx:include fx:id="editor" source="editor-panel.fxml" />
+     <fx:include fx:id="history" source="history-panel.fxml" />
    </children>
 </AnchorPane>

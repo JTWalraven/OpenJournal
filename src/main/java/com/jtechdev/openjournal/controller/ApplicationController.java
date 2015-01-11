@@ -1,4 +1,4 @@
-package com.jtechdev.openjournal.view;
+package com.jtechdev.openjournal.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
